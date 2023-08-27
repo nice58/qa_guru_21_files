@@ -1,0 +1,11 @@
+{
+  "name": "Сок",
+  "allow_to_sell": true,
+  "cost_price": 150,
+  "subject": {
+    "name_subject": "Натуральный",
+    "description_subject": "Осветленный"
+  }
+}
+
+
