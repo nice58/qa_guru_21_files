@@ -48,11 +48,11 @@ public class ParsingTest {
                 ZipEntry entry;
                 while ((entry = zis.getNextEntry()) != null) {
                     final String name = entry.getName();
-                    if (name.contains("tables.xlsx")) {
+                    if (name.contains("table.xlsx")) {
                         XLS xls = new XLS(zis);
-                        Assertions.assertEquals("Август", xls.excel.getSheetAt(0).
-                                getRow(8)
-                                .getCell(1)
+                        Assertions.assertEquals("август", xls.excel.getSheetAt(0).
+                                getRow(7)
+                                .getCell(0)
                                 .getStringCellValue());
                     }
                 }
